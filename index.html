@@ -1,0 +1,171 @@
+<html>
+    <head>
+<title>
+
+C-78
+
+
+</title>
+</head>
+<body>
+
+<p>
+How to declare the arrays?
+
+<h4 id="declaration_of_arrays">
+
+</h4>
+
+</p>
+<hr>
+<p>
+    How to fetch the first element of the array?
+    
+    <h4 id="access_first_element">
+    
+    </h4>
+    
+    </p>
+    <hr>
+    <p>
+        How to fetch the second element of the array?
+        
+        <h4 id="access_second_element">
+        
+        </h4>
+        
+        </p>
+        <hr>
+        <p>
+            How to get the the length of the array?
+            
+            <h4 id="display_length_of_array">
+            
+            </h4>
+            
+            </p>
+            <hr>
+            <p>
+                How to loop the array?
+                
+                <h4 id="loop_the_array">
+                
+                </h4>
+                
+                </p>
+                <hr>
+                <p>
+                    How to add element at the end of the array?
+                    
+                    <h4 id="add_element_at_the_end_of_array">
+                    
+                    </h4>
+                    
+                    </p>
+                    <hr>
+                    <p>
+                        How to declare the array with alphabets?
+                        
+                        <h4 id="display_alphabets_array">
+                        
+                        </h4>
+                        
+                        </p>
+                        <hr>
+                        <p>
+                            How to sort the array with the alphabets?
+                            
+                            <h4 id="display_sorted_alphabets_array">
+                            
+                            </h4>
+                            
+                            </p>
+                            <hr>
+                            <p>
+                                How to reverse the array with the alphabets?
+                                
+                                <h4 id="display_reverse_array">
+                                
+                                </h4>
+                                
+                                </p>
+                                <hr>
+                                <p>
+                                    How to declare the array with numbers ?
+                                    
+                                    <h4 id="display_number_array">
+                                    
+                                    </h4>
+                                    
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        How to find the maximum number of array?
+                                        
+                                        <h4 id="display_maximum_number">
+                                        
+                                        </h4>
+                                        
+                                        </p>
+                                        <hr>
+</body>
+
+<script>
+    var fruits=["Apple","Mango","Orange"];
+    console.log(fruits);
+
+    document.getElementById("declaration_of_arrays").innerHTML=fruits;
+
+    var first_fruits=fruits[0];
+    console.log(first_fruits);
+
+    document.getElementById("access_first_element").innerHTML=first_fruits;
+
+    
+    var second_fruits=fruits[1];
+    console.log(second_fruits);
+
+    document.getElementById("access_second_element").innerHTML=second_fruits;
+
+    var fruit_length=fruits.length;
+    console.log(fruit_length);
+
+    document.getElementById("display_length_of_array").innerHTML=fruit_length;
+
+    var array_value="";
+    
+    for(i=0;i<fruits.length;i++){console.log(fruits[i]);
+    array_value=array_value+fruits[i]+"<br>";}
+
+document.getElementById("loop_the_array").innerHTML=array_value;
+
+fruits.push("Lemon");
+console.log(fruits);
+
+document.getElementById("add_element_at_the_end_of_array").innerHTML=fruits;
+
+var alphabets=["a","d","f","b"];
+console.log(alphabets);
+
+document.getElementById("display_alphabets_array").innerHTML=alphabets;
+
+alphabets.sort();
+console.log(alphabets);
+
+document.getElementById("display_sorted_alphabets_array").innerHTML=alphabets;
+
+alphabets.reverse();
+console.log(alphabets);
+
+document.getElementById("display_reverse_array").innerHTML=alphabets;
+var numbers=["1","4","7","6"];
+console.log(numbers);
+
+document.getElementById("display_number_array").innerHTML=numbers;
+
+var maximum_number=Math.max.apply(Math,numbers);
+console.log(maximum_number);
+
+document.getElementById("display_maximum_number").innerHTML=maximum_number;
+</script>
+</html>
